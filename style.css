@@ -1,0 +1,729 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+} 
+
+
+/*   ----------------   HEADER SECTION   -------------------   */
+
+header {
+    height: 100px;
+    background: linear-gradient(to right, #0F5A78, #87EBE7, #0F5A78, #87CEEB, #0F5A78);
+    min-width: 100%;
+   
+}
+
+nav {
+    width: 50%;
+    float: right;
+    position: sticky;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+/*   ----------------------------   MAIN-SECTION   ------------------   */
+
+
+img {
+    width: 100px;
+
+}
+
+.main-section {
+    text-align: center;
+    background: linear-gradient(to right, #0F5A78, #87EBE7, #0F5A78, #87CEEB, #0F5A78);
+    min-height: 475px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+    min-width: 100%;
+}
+.webgraphy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.webgraphy span {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to left, #33ccff , #2C7D9E );
+    display: block;
+    line-height: 100px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.webgraphy span:nth-child(odd) {
+    transform: skewY(-15deg);
+    box-shadow:0 26px 20px  rgba(0,0,0,.1);
+}
+
+
+.webgraphy span:nth-child(even) {
+    transform: skewY(15deg);
+    box-shadow:0 26px 20px  rgba(0,0,0,.1) ,inset 0px 0 30px rgba(0, 0, 0, .2);
+}
+
+
+.main-section h1 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    line-height: 50px;
+}
+
+
+@media (max-width: 800px) {
+    .main-section h1 {
+        font-size: 24px;
+        width: 61%;
+        margin-top: 36px;
+        line-height: 41px;
+    }
+
+
+    .webgraphy {
+        width: 77%;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+
+    header nav {
+        width: auto;
+    }
+
+    header nav ul li {
+    margin-right: 20px;
+}
+
+
+    .webgraphy span {
+    width: 50%;
+    height: 50%;
+    font-size: 23px;
+}
+   
+}
+
+
+@media (max-width: 1200px) {
+    header, .main-section, #about-us, #our-services, #skills, #projects, #contact {
+        overflow-x: hidden;
+    }
+
+
+    header nav {
+        width: 68%;
+    }
+
+
+    #skills {
+        margin-top: -16px;
+    }
+
+
+    #contact {
+        height: 600px;
+    }
+
+
+    #projects {
+        height: 1250px;
+    }
+}
+
+
+/*   ---------------------------- ABOUT-US SECTION   ------------------------   */
+
+
+#about-us {
+    min-width: 100%;
+}
+
+.aboutus-innersec {
+    display: flex;
+}
+
+
+.left {
+    max-width: 50%;
+    margin-left: 137px
+}
+
+
+.left h2 {
+    font-size: 43px;
+    color: #0F5A78;
+}
+
+
+.left hr {
+    width: 81px;
+    display: inline-block;
+}
+
+
+.left p {
+    width: 84%;
+    color: #0F5A78;
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.right h3 {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 6px;
+    color: #0F5A78;
+}
+
+
+.right img {
+    width: 255px;
+}
+
+
+.right a {
+    text-decoration: none;
+    margin: 25px 0px 0 9%;
+    border: 1px solid;
+    padding: 16px 34px;
+    width: 101px;
+    border-radius: 30px 0px;
+    text-align: center;
+    background-color: #0F5A78;
+    color: white;
+}
+
+
+@media (max-width: 800px) {
+    .aboutus-innersec .left {
+        margin-left: 24px;
+    }
+    .aboutus-innersec .right   {
+        margin-left: 20px
+    }
+
+
+    .right h3 {
+        font-size: x-large;
+        text-align: center;
+      
+    }
+    
+}
+
+
+/*   ------------------------   SKILLS SECTION   ---------------------------------*/
+
+
+#skills {
+    min-width: 100%;
+    background-color: #0F5A78;
+    min-height: 551px;
+    clip-path: polygon(0% 14%, 101% 0%, 100% 100%, 0% 100%);
+    margin-top: -50px;
+    
+}
+
+
+.wordpress, .html, .css, .productphotography, .graphic, .seo {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.wordpressbar, .htmlbar, .cssbar, .productphotographybar, .graphicbar, .seobar {
+
+        margin: auto;
+        height: 10px;
+        background: aliceblue;
+        width: 61%;
+        border-radius: 10px;
+        margin-top: -13px;
+    }
+
+
+#skills h2 {
+    font-size: 43px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 49px;
+    line-height: 98px;
+   
+}
+
+
+#skills hr {
+    width: 92px;
+    margin-top: 30px;
+}
+
+
+.wordpressbar div, .htmlbar div, .cssbar div, .productphotographybar div, .graphicbar div, .seobar div {
+    background: #87BDEB;
+    height: 13px;
+    width: 93%;
+    border-radius: 10px;
+    margin-top: -13px;
+}
+
+
+@media (max-width: 800px) {
+    #skills, #our-services, #about-us, header, .main-section, #contact, #projects{
+        width: 700px;
+        overflow: hidden;
+        
+    }
+
+
+
+    .gigs {
+        display: block;
+    }
+
+
+    #skills {
+        margin-top: -31px;
+    }
+}
+
+
+/*   ---------------------   OUR SERVICES SECTION   ---------------   */
+
+
+#our-services {
+    height: 400px;
+    min-width: 100%;
+}
+
+
+#our-services h1 {
+    text-align: center;
+    font-size: 43px;
+    color: wheat;
+    color: #0F5A78;
+}
+
+
+.container {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+#our-services hr {
+   width: 184px;
+    
+}
+
+
+.gigs{
+   
+    display: flex;
+}
+
+
+.container:nth-child(1)  {
+    margin-left: 30px;
+}
+
+
+.container:nth-child(3)  {
+    width: 50%;
+}
+
+
+/*.container:nth-child(5) {
+    margin-right: 70px;
+}*/
+
+
+  
+.image {
+    display: block;
+    width: 79%;
+    height: 210px;
+    border-radius: 0%;
+    opacity: 0.9;
+  }
+
+.overlay-left, .overlay-bottom, .overlay-right {
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0f5a78b5;
+    overflow: hidden;
+    transition: .5s ease
+ }
+  
+
+.overlay-right {
+    left: 80%;
+    width: 0%;
+    height: 100%;
+}
+
+.container:hover .overlay-right {
+    width: 79%;
+    left: 0px;
+}
+
+
+.overlay-bottom {
+    left: 0;
+    width: 79%;
+     height: 0;
+}
+
+
+.container:hover .overlay-bottom {
+    height: 100%;
+}
+
+
+.overlay-left {
+    left: 0;
+    width: 0%;
+    height: 100%;
+}
+
+
+.container:hover .overlay-left {
+    width: 79%;
+}
+  
+.text {
+    text-align: center;
+    
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    overflow: hidden;
+    top: 44%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
+.text a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -13px;
+    text-align: center;
+    padding: 3px 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: thistle;
+    
+}
+
+
+
+
+@media (max-width: 800px) {
+    #our-services {
+        height: max-content;
+    }
+
+
+
+    .gigs {
+        display: block;
+    }
+
+
+    .gigs .container {
+        margin-left: 160px;
+    }
+
+
+    .container:nth-child(5) {
+        margin-right: 0px;
+    }
+    .container img {
+        width: 67%;
+        height: 150px;
+    }
+    
+    .container:hover .overlay-left {
+        width: 67%;
+    }
+      
+}
+
+
+/* -----------------   OUR PROJECT SECTION   -------------   */
+
+
+#projects {
+    min-width: 100%;
+   background-color: #80808045;
+   /* clip-path: polygon(0% 14%, 101% 0%, 100% 100%, 0% 100%);*/
+    height: 1580px;
+}
+
+
+#projects h1 {
+    text-align: center;
+    font-size: 43px;
+    color: #0F5A78;
+    margin-bottom: 19px;
+    padding-top: 30px;
+    /*position: relative;
+    line-height: 220px;*/
+}
+
+
+#projects hr, footer hr {
+    /*margin-top: -70px;*/
+    width: 115px;
+}
+
+
+#projects h3 {
+    text-align: center;
+    line-height: 64px;
+    font-size: 20px;
+    margin: 40px 0px 0px 0px;
+    text-decoration: underline;
+    color: #800000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+
+div.gallery {
+    width: 216px;
+    height: 252px;
+    border: 1px solid lightgrey;
+    margin-right: 30px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #0F5A78;
+  }
+  
+  div.gallery img {
+    width: 216px;
+    height: 195px;
+    margin-bottom: 10px;
+  }
+
+div.desc {
+    padding: 7px 0px;
+    text-align: center;
+  }
+  
+ div.desc a {
+     background-color: #0F5A78;
+     color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+
+div.desc a:hover {
+    background-color: #17984bbf;
+}
+
+
+/*#projects div.gallery:nth-child(3) .responsive  {
+    height: 195px;
+}*/
+    
+  .responsive {
+    padding: 0 6px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .responsive-flex {
+    display: flex;
+  }
+  
+  @media (max-width: 800px) {
+    #projects {
+        height: max-content;
+        margin-top: 20px;
+    }
+
+
+    #projects h1 {
+        padding: 0;
+    }
+    
+    
+    .responsive {
+    display: block;
+    margin-left: 3%;
+    }
+
+
+    .responsive-flex {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 68px;
+    }
+
+
+    div.gallery {
+        width: 280px;
+     height: 200px;
+     
+    }
+
+
+    div.gallery img {
+        width: 280px;
+    }
+
+
+    
+  }
+  
+ 
+
+
+
+
+
+  /*   ----------FOOTER SECTION   ----------   */
+
+
+ footer {
+     height: 370px;
+     min-width: 100%;
+     background-color: #0F5A78;
+     margin-top: -28px;
+ }
+
+
+footer h1 {
+      font-size: 43px;
+      text-align: center;
+      color: white;
+      padding-top: 22px;
+
+    }
+
+
+.contact-list {
+       /* text-align: left;
+    width: 25%;
+    margin: auto;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.contact-list p {
+        color: #9e9e9e;
+    }
+  
+
+
+.contact-list a, .contact-list span {
+        color: burlywood;
+         margin-left: 10px;
+    }
+
+
+    .contact-list a:hover {
+        color: blue;
+    }   
+
+
+
+    .footer-icons {
+        text-align: center;
+    }
+
+    footer i {
+        font-size: 26px;
+    padding: 9px;
+    }
+
+
+
+    .fa-facebook-f, .fa-twitter,   .fa-envelope {
+        color: white;
+        margin: 0px 6px 0px 0px;
+    }
+
+
+    .fa-twitter {
+        background-color: #41aaf2;
+    }
+
+
+    .fa-facebook-f {
+        background-color: #495ca5;
+    }
+
+
+    .fa-envelope {
+        background-color: brown;
+    }
+
+@media (max-width: 800px) {
+    /*.contact-list {
+        width: 28%;
+    }*/
+
+
+    #contact {
+        height: 428px;
+    }
+}
+
+  
