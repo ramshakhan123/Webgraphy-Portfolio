@@ -687,12 +687,13 @@ footer h1 {
 
     .footer-icons {
         text-align: center;
-        margin-top: 10px;
+        
     }
 
     footer i {
         font-size: 26px;
-    padding: 9px;
+        padding: 9px;
+        margin-top: 10px;
     }
 
 
